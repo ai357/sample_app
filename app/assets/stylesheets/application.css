@@ -21,6 +21,11 @@
 }
 
 
+header, h1, nav, .list-comment {
+  font-family: 'Kaushan', cursive, sans-serif;
+}
+
+
 header {
   width: 90%;
   padding: 15px 0;
@@ -43,14 +48,14 @@ nav {
 }
 
 
-nav-list {
+.nav-list {
   text-align: center;
   padding: 10px 0;
   margin: 0 auto;
 }
 
 
-nav-list-item {
+.nav-list-item {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
@@ -64,7 +69,7 @@ main {
 
 
 .list-wrap {
-  desplay: flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -73,9 +78,30 @@ main {
   width: 200px;
   height: 250px;
   margin: 10px;
+  position: relative;
 }
 
 
 .list-comment {
   width: 200px;
+  position: absolte;
+  left: 0;
+  bottom: 0;
+}
+
+.list-body {
+  display: block;
+  color: gray;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-title {
+  display: block;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
